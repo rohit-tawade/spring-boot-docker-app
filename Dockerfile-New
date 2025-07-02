@@ -5,7 +5,7 @@ FROM maven:latest AS build
 WORKDIR /app
 
 # Clone the Git repository
-RUN git clone  .
+RUN git clone https://github.com/rohit-tawade/spring-boot-docker-app.git  .
 
 # Build the application
 RUN mvn clean package -DskipTests
